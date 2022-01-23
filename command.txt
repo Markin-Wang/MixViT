@@ -1,0 +1,13 @@
+python3 -m torch.distributed.launch --nproc_per_node 4 train.py \
+--name soyloc_mttrasnformer
+--dataset soybean200 
+--model_type R50-ViT-B_16 
+--pretrained_dir /home/ubuntu/junwang/pretrained_model/R50+ViT-B_16.npz 
+--img_size 448 
+--resize_size 600 
+--train_batch_size 16 
+--learning_rate 5e-3 
+--num_steps 4000 
+--fp16 --eval_every 80 
+--decay_type linear 
+--weight_decay 1e-4

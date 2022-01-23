@@ -1,0 +1,5 @@
+data/*
+output/*
+pretrained_models
+apex
+logs/*
