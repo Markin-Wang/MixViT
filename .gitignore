@@ -3,3 +3,9 @@ output/*
 pretrained_models
 apex
 logs/*
+<<<<<<< HEAD
+=======
+trained_models
+log
+visualization.zip
+>>>>>>> 067769b0... full version
