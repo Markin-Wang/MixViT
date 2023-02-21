@@ -46,29 +46,14 @@ You can download the datasets from the links below:
 + [Cotton and Soy.Loc](https://drive.google.com/drive/folders/1UkWRepieAvEVEn3Z8n1Zx04bASvvqL7G?usp=sharing).
 
 
-## Training scripts for FFVT on Cotton dataset.
-Train the model on the Cotton dataset. We run our experiments on 4x2080Ti/4x1080Ti with the batchsize of 8 for each card.
+## Run the experiments.
+Using the scripts on scripts directory to train the model, e.g., train on Soy.Gbl dataset.
 
-    $ python3 -m torch.distributed.launch --nproc_per_node 4 train.py --name {name} --dataset cotton --model_type ViT-B_16 --pretrained_dir {pretrained_model_dir} --img_size 384 --resize_size 500 --train_batch_size 8 --learning_rate 0.02 --num_steps 2000 --fp16 --eval_every 16 --feature_fusion
-
-## Training scripts for FFVT on Soy.Loc dataset.
-Train the model on the SoyLoc dataset. We run our experiments on 4x2080Ti/4x1080Ti with the batchsize of 8 for each card.
-
-    $ python3 -m torch.distributed.launch --nproc_per_node 4 train.py --name {name} --dataset soyloc --model_type ViT-B_16 --pretrained_dir {pretrained_model_dir} --img_size 384 --resize_size 500 --train_batch_size 8 --learning_rate 0.02 --num_steps 4750 --fp16 --eval_every 50 --feature_fusion
-    
-## Training scripts for FFVT on CUB dataset.
-Train the model on the CUB dataset. We run our experiments on 4x2080Ti/4x1080Ti with the batchsize of 8 for each card.
-
-    $ python3 -m torch.distributed.launch --nproc_per_node 4 train.py --name {name} --dataset CUB --model_type ViT-B_16 --pretrained_dir {pretrained_model_dir} --img_size 448 --resize_size 600 --train_batch_size 8 --learning_rate 0.02 --num_steps 10000 --fp16 --eval_every 200 --feature_fusion
-    
-## Training scripts for FFVT on Dogs dataset.
-Train the model on the Dog dataset. We run our experiments on 4x2080Ti/4x1080Ti with the batchsize of 4 for each card.
-
-    $ python3 -m torch.distributed.launch --nproc_per_node 4 train.py --name {name} --dataset CUB --model_type ViT-B_16 --pretrained_dir {pretrained_model_dir} --img_size 448 --resize_size 600 --train_batch_size 4 --learning_rate 3e-3 --num_steps 30000 --fp16 --eval_every 300 --feature_fusion --decay_type linear --num_token 24
+    $ sh scripts/train_soygbl.sh
     
         
             
-## Download  Models
+## Download Trained Models
 
 
 [Trained model Google Drive](https://drive.google.com/drive/folders/1k1vqc0avk_zpCAVuLNZpVX-w-Q3xXf-5?usp=sharing)
@@ -81,8 +66,7 @@ Thanks for the advice and guidance given by Dr.Xiaohan Yu and Prof. Yongsheng Ga
 
 Our project references the codes in the following repos. Thanks for thier works and sharing.
 - [ViT-pytorch](https://github.com/jeonsworld/ViT-pytorch)
-- [TransFG](https://github.com/TACJu/TransFG)
-
+- [FFVT](https://github.com/Markin-Wang/FFVT)
 
 
 
