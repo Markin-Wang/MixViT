@@ -19,7 +19,7 @@ If you use the code in this repo for your work, please cite the following bib en
 <div style="text-align:justify"> Ultra-fine-grained visual categorization (ultra-FGVC) moves down the taxonomy level to classify sub-granularity categories of fine-grained objects. This inevitably poses a challenge, i.e., classifying highly similar objects with limited samples, which impedes the performance of recent advanced vision transformer methods. To that end, this paper introduces Mix-ViT, a novel mixing attentive vision transformer to address the above challenge towards improved ultra-FGVC. The core design is a self-supervised module that mixes the high-level sample tokens and learns to predict whether a token has been substituted after attentively substituting tokens. This drives the model to understand the contextual discriminative details among inter-class samples. Via incorporating such a self-supervised module, the network gains more knowledge from the intrinsic structure of input data and thus improves generalization capability with limited training sample. The proposed Mix-ViT achieves competitive performance on seven publicly available datasets, demonstrating the potential of vision transformer compared to CNN for the first time in addressing the challenging ultra-FGVC tasks. </div>
 
 
-<img src='architecture.png' width='1280' height='350'>
+<img src='architecture.jpeg' width='1280' height='350'>
 
 
 ## Prerequisites
