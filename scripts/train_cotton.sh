@@ -7,9 +7,9 @@ python3 -m torch.distributed.launch --nproc_per_node 2 train.py \
 --resize_size 600 \
 --train_batch_size 16 \
 --learning_rate 5e-3 \
---num_steps 3200 \
+--num_steps 2400 \
 --fp16 \
---eval_every 80 \
+--eval_every 24 \
 --decay_type linear \
 --weight_decay 1e-4 \
 --eval_every 16 \
