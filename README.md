@@ -42,7 +42,6 @@ wget https://storage.googleapis.com/vit_models/imagenet21k/{MODEL_NAME}.npz
 You can download the datasets from the links below:
 
 + [CUB-200-2011](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html).
-+ [Stanford Dogs](http://vision.stanford.edu/aditya86/ImageNetDogs/)
 + [Cotton and Soy.Loc](https://drive.google.com/drive/folders/1UkWRepieAvEVEn3Z8n1Zx04bASvvqL7G?usp=sharing).
 
 
