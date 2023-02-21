@@ -26,7 +26,7 @@ If you use the code in this repo for your work, please cite the following bib en
 
 The following packages are required to run the scripts:
 - [Python >= 3.6]
-- [PyTorch = 1.5]
+- [PyTorch = 1.8]
 - [Torchvision]
 - [Apex]
 
