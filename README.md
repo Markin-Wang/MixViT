@@ -46,9 +46,9 @@ You can download the datasets from the links below:
 
 
 ## Run the experiments.
-Using the scripts on scripts directory to train the model, e.g., train on Soy.Gbl dataset.
+Using the scripts on scripts directory to train the model, e.g., train on SoybeanGene dataset.
 
-    $ sh scripts/train_soygbl.sh
+    $ sh scripts/train_soybean_gene.sh
     
         
             
@@ -61,7 +61,6 @@ Using the scripts on scripts directory to train the model, e.g., train on Soy.Gb
 
 
 ## Acknowledgment
-Thanks for the advice and guidance given by Dr.Xiaohan Yu and Prof. Yongsheng Gao.
 
 Our project references the codes in the following repos. Thanks for thier works and sharing.
 - [ViT-pytorch](https://github.com/jeonsworld/ViT-pytorch)
