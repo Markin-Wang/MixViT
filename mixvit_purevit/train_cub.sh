@@ -1,0 +1,20 @@
+python3  train.py \
+--name $LOG_PATH \
+--dataset CUB \
+--model_type ViT-B_16 \
+--pretrained_dir ./pretrained_models/ViT-B_16.npz \
+--img_size 448 \
+--resize_size 600 \
+--train_batch_size 16 \
+--eval_batch_size 16 \
+--learning_rate 2e-2 \
+--num_steps 10000 \
+--fp16 \
+--fp16_opt_level O2 \
+--eval_every 200 \
+--decay_type cosine \
+--weight_decay 5e-5 \
+--mask_weight 0.1 \
+--seed 222 \
+--mask_topk 0.2 \
+--mask \
