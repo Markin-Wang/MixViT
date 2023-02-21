@@ -1,0 +1,19 @@
+python3 -m torch.distributed.launch --nproc_per_node 2 train.py \
+--name $LOG_PATH \
+--dataset AFD \
+--model_type R50-ViT-B_16 \
+--pretrained_dir ./pretrained_models/R50+ViT-B_16.npz \
+--train_batch_size 4 \
+--eval_batch_size 4 \
+--img_size 448 \
+--resize_size 600 \
+--learning_rate 2e-2 \
+--num_steps  4300 \
+--fp16 \
+--eval_every 43 \
+--decay_type cosine \
+--weight_decay 5e-5 \
+--mask_weight 0.25 \
+--mask_topk 0.02 \
+--seed 3567 \
+--mask

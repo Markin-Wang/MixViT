@@ -1,0 +1,17 @@
+python3 -m torch.distributed.launch --nproc_per_node 2 train.py \
+--name $LOG_PATH \
+--dataset soyloc \
+--model_type R50-ViT-B_16 \
+--pretrained_dir ./pretrained_models/R50+ViT-B_16.npz \
+--img_size 448 \
+--resize_size 600 \
+--train_batch_size 16 \
+--learning_rate 5e-3 \
+--num_steps 9500 \
+--fp16 \
+--eval_every 38 \
+--decay_type linear \
+--weight_decay 5e-5 \
+--num_parts 5 \
+--mask_weight 4 \
+--mask_topk 0.2 \

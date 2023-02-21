@@ -1,0 +1,20 @@
+python3  train.py \
+--name $LOG_PATH \
+--dataset soybean2000 \
+--model_type ViT-B_16 \
+--pretrained_dir ./pretrained_models/ViT-B_16.npz \
+--img_size 448 \
+--resize_size 600 \
+--train_batch_size 16 \
+--eval_batch_size 16 \
+--learning_rate 2e-2 \
+--num_steps 72600 \
+--eval_every 726 \
+--seed 42 \
+--decay_type linear \
+--weight_decay 5e-5 \
+--fp16 \
+--fp16_opt_level O2 \
+--mask \
+--mask_weight 1 \
+--mask_topk 0.1 \

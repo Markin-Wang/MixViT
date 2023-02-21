@@ -1,0 +1,19 @@
+python3 -m torch.distributed.launch --nproc_per_node 2 train.py \
+--name $LOG_PATH \
+--dataset soybean_gene \
+--model_type R50-ViT-B_16 \
+--pretrained_dir ./pretrained_models/R50+ViT-B_16.npz \
+--img_size 448 \
+--resize_size 600 \
+--train_batch_size 16 \
+--learning_rate 5e-3 \
+--num_steps 120000 \
+--fp16 \
+--eval_every 300 \
+--decay_type linear \
+--weight_decay 1e-4 \
+--num_parts 5 \
+--mask_weight 4 \
+--seed 12 \
+--mask_topk 0.2 \
+--mask 
