@@ -55,7 +55,7 @@ Using the scripts on scripts directory to train the model, e.g., train on Soybea
 ## Download Trained Models
 
 
-[Trained model Google Drive](https://drive.google.com/drive/folders/1k1vqc0avk_zpCAVuLNZpVX-w-Q3xXf-5?usp=sharing)
+[Trained model Google Drive](https://drive.google.com/drive/folders/1g4ex3_P_VOOU5Up_BFdSvrFxVpRQTwc3?usp=share_link)
 
 
 
